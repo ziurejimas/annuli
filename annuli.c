@@ -1,4 +1,11 @@
+#include <stdio.h>
 #include <stdint.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <sys/time.h>
+#include <sys/types.h>
 
 #define MEMORY_MAX (1 << 16)
 uint16_t memory[MEMORY_MAX];
