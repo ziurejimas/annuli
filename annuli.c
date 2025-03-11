@@ -38,4 +38,11 @@ enum
     OP_RES,
     OP_LEA,
     OP_TRAP
-}
+};
+
+enum
+{
+    FL_POS = 1 << 0,
+    FL_ZRO = 1 << 1,
+    FL_NEG = 1 << 2,
+};
