@@ -24,7 +24,6 @@ enum
     R_COND,
     R_COUNT
 };
-
 uint16_t reg[R_COUNT];
 
 enum
@@ -53,3 +52,13 @@ enum
     FL_ZRO = 1 << 1,
     FL_NEG = 1 << 2,
 };
+
+int main(int argc, const char* argv[]){
+    
+    reg[R_COND] = FL_ZRO;
+
+    enum{ PC_START = 0x3000 };
+    reg[R_PC] = PC_START;
+
+    
+}
